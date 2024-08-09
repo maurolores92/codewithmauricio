@@ -1,10 +1,7 @@
 
-# 🚀 Sven - Personal Portfolio Template - Astro.build + react
+# 🚀 MauroDev - Personal Portfolio Template - Astro.build + react
 
-
-![Logo](https://www.codexcode.pl/_astro/project-sven.Dm1LhZsF.webp)
-
-## 🚀 [LIVEW PREVIEW](https://sven-astro.netlify.app/) 🚀
+## 🚀 [LIVEW PREVIEW](https://codewithmauricio.tech/) 🚀
 
 ## 🧞 Features
 
@@ -79,11 +76,9 @@ Change links & add all your pages into sitemap.cjs to have better SEO optmalizat
 
 ## 🧞 Contact & Support
 
-If you have any problems or questions, please let us know here:  [Contact Form](https://www.codexcode.store/pages/contact)
+If you have any problems or questions, please let us know here:  [Contact Form](https://codewithmauricio.tech/contact/)
 
-## 🚀 Enjoy!
-Hope you like this theme, if yes it will be nice if you could rate this theme here [Give us star!](https://www.codexcode.store/products/sven-personal-portfolio-template)
 ## Authors
 
-- [@codexcode](https://www.codexcode.pl/)
+- [@maurolores92](https://codewithmauricio.tech/)
 
