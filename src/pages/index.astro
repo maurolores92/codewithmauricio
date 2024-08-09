@@ -1,0 +1,23 @@
+---
+import { Hero } from "@modules/Hero";
+import Layout from "../layouts/Layout.astro";
+import { About } from "@modules/About";
+import { Projects } from "@modules/Projects";
+import { LogosSlider } from "@modules/LogosSlider";
+import { Contact } from "@modules/Contact";
+
+import { HomepageData } from "@modules/Projects/data/HomepageData";
+---
+
+<Layout
+    title="Inicio"
+    description="Soy Desarrollador Frontend con mas de 3 años de experiencia en la industria."
+>
+    <main class="page-content">
+        <Hero client:load />
+        <LogosSlider client:visible />
+        <About client:visible />
+        <Projects data={HomepageData} client:visible />
+        <Contact client:visible />
+    </main>
+</Layout>

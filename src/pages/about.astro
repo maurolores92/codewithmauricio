@@ -1,0 +1,78 @@
+---
+import {
+    AboutPageStyled,
+    AboutPageStyledBoxesWrapper,
+} from "@modules/About/styled";
+import Layout from "../layouts/Layout.astro";
+import { About as AboutModule } from "@modules/About";
+import { TextBox } from "@components/textBox";
+import { Container } from "@components/Container";
+import { FadeIn } from "@utils/animations/FadeIn";
+---
+
+<Layout
+    title="Sobre mi"
+    description="Hola, me llamo Mauricio Lores. Soy Desarrollador Frontend con mas de 3 años de experiencia en la industria."
+>
+    <main class="page-content">
+        <AboutModule hideExp={true} client:load />
+        <AboutPageStyled>
+            <FadeIn client:visible>
+                <Container>
+                    <h2>Lenguajes de programacion &<br /> Herramientas</h2>
+                    <AboutPageStyledBoxesWrapper>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>React</h4>
+                            <p>3,5 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>JavaScript</h4>
+                            <p>2 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Next.js</h4>
+                            <p>1 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Typescript</h4>
+                            <p>1 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>MySQL</h4>
+                            <p>1.5 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Wordpress</h4>
+                            <p>4 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Astro.js</h4>
+                            <p>2 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Node.js</h4>
+                            <p>3,5 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Figma</h4>
+                            <p>few months</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Google Analitics</h4>
+                            <p>1 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Bootstrap</h4>
+                            <p>few months</p>
+                        </TextBox>
+                        
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>SASS</h4>
+                            <p>few months</p>
+                        </TextBox>
+                    </AboutPageStyledBoxesWrapper>
+                </Container>
+            </FadeIn>
+        </AboutPageStyled>
+    </main>
+</Layout>

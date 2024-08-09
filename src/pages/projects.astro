@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Projects as ProjectsModule } from "@modules/Projects";
+import { ProjectsData } from "@modules/Projects/data/ProjectsData";
+---
+
+<Layout
+    title="Projects"
+    description="Una colección de proyectos en los que he trabajado, que van desde contribuciones de código abierto hasta proyectos personales y trabajos de clientes."
+>
+    <main class="page-content">
+        <ProjectsModule data={ProjectsData} client:load />
+    </main>
+</Layout>

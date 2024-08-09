@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Contact as ContactModule } from "@modules/Contact";
+---
+
+<Layout
+    title="Contacto"
+    description="Contacta conmigo para cualquier duda o pregunta que tengas."
+>
+    <main class="page-content">
+        <ContactModule client:load />
+    </main>
+</Layout>
