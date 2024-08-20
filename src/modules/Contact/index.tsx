@@ -58,9 +58,9 @@ export const Contact: FC = () => {
     const formSubmit = contactForm.handleSubmit(async (values) => {
         axios
             .post("https://api.emailjs.com/api/v1.0/email/send", {
-                service_id: "service_rf6usgt",
-                template_id: "template_0taei3k",
-                user_id: "Xj3nyz-8v-oG8e-6l",
+                service_id: "service_pjkjt84",
+                template_id: "template_lq79wcs",
+                user_id: "KFILfWDYSkUZMtPXZ",
                 template_params: {
                     name: values.name,
                     email: values.email,
@@ -118,10 +118,10 @@ export const Contact: FC = () => {
                         </FormStyled>
                     </FadeIn>
                 ) : (
-                    <h2>
+                    <h3>
                         ¡Gracias por tu mensaje! Me comunicaré contigo como
-                        tan pronto como sea posible!
-                    </h2>
+                        tan pronto como sea posible!!
+                    </h3>
                 )}
 
                 <S.ContactBox>

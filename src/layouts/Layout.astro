@@ -10,6 +10,8 @@ interface Props {
     description: string;
 }
 
+const googleAnalyticsID = 'G-R4GEWJJ1P7';
+
 const { title, description } = Astro.props;
 ---
 
@@ -18,7 +20,10 @@ const { title, description } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.ico?v=2" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
         <meta
@@ -27,7 +32,8 @@ const { title, description } = Astro.props;
         />
         <meta
             name="keywords"
-            content="mauroDev, portfolio, portafolio,  programmer, programador, desarrollador front-end, back-end"
+            content="mauroDev, portfolio, portafolio,  programmer, programador, desarrollador front-end, 
+            back-end, Desarrollo web, diseño web, html, css, javascript"
         />
 
         <meta name="color-scheme" content="light only" />
@@ -35,8 +41,11 @@ const { title, description } = Astro.props;
         <meta property="og:url" content="https://codewithmauricio.tech" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="MauroDev" />
-        <meta property="og:image" content={Preview.src} />
+        <meta property="og:image" content="http://imgfz.com/i/f17VCYT.png" />
         <meta property="og:description" content={description} />
+        <meta property="og:site_name" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_ES" />
 
         <meta name="card" content="summary_large_image" />
         <meta name="title" content="MauroDev" />
@@ -44,13 +53,18 @@ const { title, description } = Astro.props;
         <meta name="image" content={Preview.src} />
         <meta property="domain" content="codewithmauricio.tech" />
         <meta property="url" content="https://codewithmauricio.tech" />
+        <link rel="canonical" href="https://www.codewithmauricio.tech/" />
+        
         <title>{title}</title>
         <Global styles={NormalizeCSS} />
-
+        <fragment set:html={`<script async src="https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsID}"></script>
         <script>
-            /**
-             * Load theme from local storage as fast as possible
-             */
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${googleAnalyticsID}');
+        </script>`} />
+        <script>
             const theme = localStorage.getItem("theme");
             const body = document.body;
 
