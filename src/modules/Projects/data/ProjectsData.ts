@@ -177,7 +177,7 @@ export const ProjectsData = [
                 description: "2024-01-01",
             },
             {
-                title: "Proyecto Propio",
+                title: "Caso de Estudio",
                 description: "TECHapp",
             },
         ],
@@ -213,7 +213,7 @@ export const ProjectsData = [
                 description: "2024-01-01",
             },
             {
-                title: "Cliente",
+                title: "Caso de Estudio",
                 description: "Gamming Store",
             },
         ],
