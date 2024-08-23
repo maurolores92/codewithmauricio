@@ -80,7 +80,7 @@ const Chatbot = () => {
 
   return (
     <div>
-      <button onClick={toggleChatbot} style={{background:'transparent', border:'none'}}>
+      <button onClick={toggleChatbot} aria-label="ChatBot" style={{background:'transparent', border:'none'}}>
         {isOpen ? <Icon icon="icon-park:close-one" fontSize={25}/> : <Icon icon="cryptocurrency-color:chat"  fontSize={50}/>}
       </button>
       {isOpen && (

@@ -8,6 +8,7 @@ const slug = Astro.params.slug as string;
 const entries = await client.getEntries({
   content_type: 'blogPost',
   'fields.slug': slug,
+  include: 10,
 });
 
 if (entries.items.length === 0) {
@@ -35,11 +36,13 @@ function renderContent(content: any) {
   return content.content.map((node: any) => {
     switch (node.nodeType) {
       case 'paragraph':
-        return `<p style="font-size: 20px;">${node.content.map(renderText).join('')}</p>`;
+        return `<p class="paragraph">${node.content.map(renderText).join('')}</p>`;
       case 'heading-1':
         return `<h1>${node.content.map(renderText).join('')}</h1>`;
       case 'heading-2':
         return `<h4>${node.content.map(renderText).join('')}</h4>`;
+      case 'embedded-asset-block':
+        return renderEmbeddedAsset(node);
       default:
         return '';
     }
@@ -59,7 +62,19 @@ function renderText(textNode: any) {
   }
   return textNode.value;
 }
+
+function renderEmbeddedAsset(node: any) {
+  const { metadata, sys, fields } = node.data.target;
+  const assetUrl = fields.file.url;
+  const assetTitle = fields.title;
+
+  return `<div class="embedded-asset">
+            <img class="centered-image" src="${assetUrl}" alt="${assetTitle}" />
+            <p>${assetTitle}</p>
+          </div>`;
+}
 ---
+
 
 <Layout title={post.fields.title} description={post.fields.excerpt}>
   <main class="page-content">

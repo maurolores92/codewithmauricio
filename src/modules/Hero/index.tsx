@@ -17,6 +17,7 @@ export const Hero: FC = () => {
                             alt="hero"
                             width={300}
                             height={300}
+                            loading="lazy"
                         />
                     </FadeIn>
                     <FadeIn delay={0.2}>
