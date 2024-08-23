@@ -44,7 +44,7 @@ export const Socials: FC = ({ ...rest }) => {
                 </S.SocialsListItem>
                 <S.SocialsListItem>
                     <S.SocialsLink
-                        href="https://instagram.com"
+                        href="https://instagram.com/mlores.dev"
                         target="_blank"
                         rel="noreferrer"
                     >

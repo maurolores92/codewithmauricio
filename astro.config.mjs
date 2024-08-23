@@ -6,6 +6,7 @@ export default defineConfig({
     integrations: [react()],
     renderers: ["@astrojs/renderer-react"],
     prerender: true,
+    output: 'static',
     vite: {
         plugins: [CompressionPlugin()],
     },

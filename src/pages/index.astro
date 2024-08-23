@@ -7,11 +7,12 @@ import { LogosSlider } from "@modules/LogosSlider";
 import { Contact } from "@modules/Contact";
 
 import { HomepageData } from "@modules/Projects/data/HomepageData";
+import Chatbot from "@modules/chatBot/ChatBox";
 ---
 
 <Layout
     title="Inicio"
-    description="Soy Desarrollador Frontend con mas de 3 años de experiencia en la industria."
+    description="Soy Desarrollador Frontend con más de 3 años de experiencia en la industria."
 >
     <main class="page-content">
         <Hero client:load />
@@ -19,5 +20,9 @@ import { HomepageData } from "@modules/Projects/data/HomepageData";
         <About client:visible />
         <Projects data={HomepageData} client:visible />
         <Contact client:visible />
+        <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+            <Chatbot client:load />
+        </div>
     </main>
+    
 </Layout>
