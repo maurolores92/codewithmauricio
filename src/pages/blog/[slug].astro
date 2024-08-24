@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getBlogPostById, client } from '../../fetchBlogPostById';
 import type { BlogPost } from 'types';
 import '../../styles/blog.css';
+import Comments from '../../modules/Blog/Comments';
 
 const slug = Astro.params.slug as string;
 const entries = await client.getEntries({
@@ -91,6 +92,7 @@ function renderEmbeddedAsset(node: any) {
       <button class="styled-button">
         <a href="/blog">Volver al blog</a>
       </button>
-  </div>
+    </div>
+    <Comments postId={entryId} client:only="react" />
   </main>
 </Layout>

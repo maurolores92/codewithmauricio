@@ -24,6 +24,7 @@
     "axios": "^1.6.8",
     "contentful": "^10.15.0",
     "dialogflow": "^1.2.0",
+    "firebase": "^10.13.0",
     "gsap": "^3.12.5",
     "react-device-detect": "^2.2.3",
     "react-hook-form": "^7.51.3",
