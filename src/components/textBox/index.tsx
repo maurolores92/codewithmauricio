@@ -11,6 +11,7 @@ export type TextBoxProps = {
     variant?: "normal" | "background-text";
     bgText?: string;
     boxAsLink?: boolean;
+    style?: React.CSSProperties; 
 } & TextBoxLinkProps;
 
 export const TextBox: FC<TextBoxProps> = ({

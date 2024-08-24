@@ -6,6 +6,8 @@ import TextField from "@mui/material/TextField";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import 'styles/comment.css';
+import { FadeIn } from "@utils/animations/FadeIn";
+import { TextBox } from "@components/textBox";
 
 interface Comment {
   id: string;
@@ -117,15 +119,17 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
       </div>
       <ul className="comment-list">
       {comments.map((c) => (
-        <li key={c.id} className="comment-item">
-          <strong className="comment-author">{c.name}</strong>
-          <p className="comment-content">{c.content}</p>
-          <small className="comment-date">{c.createdAt.toLocaleString()}</small>
-          <div className="comment-votes">
-            <Button onClick={() => handleUpvote(c.id)}><ThumbUpIcon /> {c.upvotes}</Button>
-            <Button onClick={() => handleDownvote(c.id)}><ThumbDownIcon /> {c.downvotes}</Button>
-          </div>
-        </li>
+        <TextBox variant="background-text" style={{ marginBottom: '1rem' }}>
+          <li key={c.id}>
+            <strong className="comment-author">{c.name}</strong>
+            <p className="comment-content">{c.content}</p>
+            <small className="comment-date">{c.createdAt.toLocaleString()}</small>
+            <div className="comment-votes">
+              <Button onClick={() => handleUpvote(c.id)}><ThumbUpIcon /> {c.upvotes}</Button>
+              <Button onClick={() => handleDownvote(c.id)}><ThumbDownIcon /> {c.downvotes}</Button>
+            </div>
+          </li>
+        </TextBox>
       ))}
     </ul>
     </div>
