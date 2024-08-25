@@ -5,8 +5,8 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import 'styles/comment.css';
-import { FadeIn } from "@utils/animations/FadeIn";
 import { TextBox } from "@components/textBox";
 
 interface Comment {
@@ -16,6 +16,7 @@ interface Comment {
   name: string;
   upvotes: number;
   downvotes: number;
+  replies?: Comment[];
 }
 
 const Comments: React.FC<{ postId: string }> = ({ postId }) => {
@@ -35,6 +36,7 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
           name: data.name,
           upvotes: data.upvotes || 0,
           downvotes: data.downvotes || 0,
+          replies: data.replies || [],
         } as Comment;
       });
       setComments(commentsData);
@@ -51,6 +53,7 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
         createdAt: new Date(),
         upvotes: 0,
         downvotes: 0,
+        replies: [],
       });
       setComment('');
       setName('');
@@ -65,6 +68,7 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
           name: data.name,
           upvotes: data.upvotes || 0,
           downvotes: data.downvotes || 0,
+          replies: data.replies || [],
         } as Comment;
       });
       setComments(commentsData);
@@ -118,20 +122,40 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
         </Button>
       </div>
       <ul className="comment-list">
-      {comments.map((c) => (
-        <TextBox variant="background-text" style={{ marginBottom: '1rem' }}>
-          <li key={c.id}>
-            <strong className="comment-author">{c.name}</strong>
-            <p className="comment-content">{c.content}</p>
-            <small className="comment-date">{c.createdAt.toLocaleString()}</small>
-            <div className="comment-votes">
-              <Button onClick={() => handleUpvote(c.id)}><ThumbUpIcon /> {c.upvotes}</Button>
-              <Button onClick={() => handleDownvote(c.id)}><ThumbDownIcon /> {c.downvotes}</Button>
-            </div>
-          </li>
-        </TextBox>
-      ))}
-    </ul>
+        {comments.map((c) => (
+          <TextBox variant="background-text" style={{ marginBottom: '1rem' }} key={c.id}>
+            <li>
+              <div style={{display:"flex"}}>
+                <AccountCircleIcon className="user-icon" />
+                <strong className="comment-author">{c.name}</strong>
+              </div>
+              <div className="comment-content-wrapper">
+                <p className="comment-content">{c.content}</p>
+                <small className="comment-date">{c.createdAt.toLocaleString()}</small>
+                <div className="comment-votes">
+                  <Button onClick={() => handleUpvote(c.id)}><ThumbUpIcon /> {c.upvotes}</Button>
+                  <Button onClick={() => handleDownvote(c.id)}><ThumbDownIcon /> {c.downvotes}</Button>
+                </div>
+                {c.replies && c.replies.length > 0 && (
+                  <ul className="reply-list">
+                    {c.replies.map((reply) => (
+                      <li key={reply.id} className="reply-item">
+                       <div style={{display:"flex"}}>
+                          <img src="/src/static/images/maurodev.webp" alt="Owner" className="user-icon" />
+                          <strong className="comment-author">{reply.name}</strong>
+                        </div>
+                        <div className="comment-content-wrapper">
+                          <p className="comment-content">{reply.content}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </li>
+          </TextBox>
+        ))}
+      </ul>
     </div>
   );
 };
