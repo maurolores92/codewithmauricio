@@ -132,10 +132,6 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
               <div className="comment-content-wrapper">
                 <p className="comment-content">{c.content}</p>
                 <small className="comment-date">{c.createdAt.toLocaleString()}</small>
-                <div className="comment-votes">
-                  <Button onClick={() => handleUpvote(c.id)}><ThumbUpIcon /> {c.upvotes}</Button>
-                  <Button onClick={() => handleDownvote(c.id)}><ThumbDownIcon /> {c.downvotes}</Button>
-                </div>
                 {c.replies && c.replies.length > 0 && (
                   <ul className="reply-list">
                     {c.replies.map((reply) => (
