@@ -1,5 +1,6 @@
 import React from 'react';
 import type { BlogPost } from 'types';
+import '../../styles/blog.css';
 
 interface BlogPostDetailProps {
   post: BlogPost;

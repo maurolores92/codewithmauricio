@@ -165,3 +165,11 @@ a:hover {
       margin-bottom: 20px;
   }
 }
+
+/* styles.css */
+.embedded-asset img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
