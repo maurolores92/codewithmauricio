@@ -141,8 +141,8 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
                     {c.replies.map((reply) => (
                       <li key={reply.id} className="reply-item">
                        <div style={{display:"flex"}}>
-                          <img src="/src/static/images/maurodev.webp" alt="Owner" className="user-icon" />
-                          <strong className="comment-author">{reply.name}</strong>
+                          <img src="src/static/images/maurodev.webp" alt="MauroDev" className="user-icon" />
+                          <strong className="comment-author">MauroDev</strong>
                         </div>
                         <div className="comment-content-wrapper">
                           <p className="comment-content">{reply.content}</p>
