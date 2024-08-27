@@ -36,5 +36,6 @@ export interface BlogPost {
       };
     }[];
     tags: string[];
+    slug: string; 
   };
 }
