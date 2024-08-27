@@ -1,34 +1,14 @@
 ---
-import AdminComments from "@modules/Blog/AdminComments";
-const validUsername = import.meta.env.VITE_VALID_USERNAME;
-const validPassword = import.meta.env.VITE_VALID_PASSWORD;
+import Layout from "../layouts/Layout.astro";
+import LoginForm from "@modules/Admin/LoginForm";
 ---
 
-<html>
-  <head>
-    <title>Administrar Comentarios</title>
-    <style>
-      body {
-        display: none;
-      }
-    </style>
-  </head>
-  <body data-username={validUsername} data-password={validPassword}>
-    <h1>Administrar Comentarios</h1>
-    <AdminComments client:only/>
-    <script>
-      const username = prompt("Ingrese su nombre de usuario:");
-      const password = prompt("Ingrese su contraseña:");
-
-      const validUsername = document.body.getAttribute('data-username');
-      const validPassword = document.body.getAttribute('data-password');
-
-      if (username === validUsername && password === validPassword) {
-        document.body.style.display = "block";
-      } else {
-        alert("Acceso denegado");
-        window.location.href = "/";
-      }
-    </script>
-  </body>
-</html>
+<Layout
+    title="Login"
+    description="Iniciar sesion"
+>
+    <main class="page-content">
+        <LoginForm client:only />
+    </main>
+    
+</Layout>

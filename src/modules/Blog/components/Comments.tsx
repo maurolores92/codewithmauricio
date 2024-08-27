@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { collection, addDoc, getDocs, updateDoc, doc } from "firebase/firestore";
-import { db } from "firebaseConfig";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "@utils/firebaseConfig";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import 'styles/comment.css';
+import Box from '@mui/material/Box';
 import { TextBox } from "@components/textBox";
 
 interface Comment {
@@ -14,9 +12,8 @@ interface Comment {
   content: string;
   createdAt: Date;
   name: string;
-  upvotes: number;
-  downvotes: number;
   replies?: Comment[];
+  request: number; // Agregar el campo request
 }
 
 const Comments: React.FC<{ postId: string }> = ({ postId }) => {
@@ -34,9 +31,8 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
           content: data.content,
           createdAt: data.createdAt.toDate(),
           name: data.name,
-          upvotes: data.upvotes || 0,
-          downvotes: data.downvotes || 0,
           replies: data.replies || [],
+          request: data.request || 0, 
         } as Comment;
       });
       setComments(commentsData);
@@ -51,9 +47,8 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
         name: name,
         content: comment,
         createdAt: new Date(),
-        upvotes: 0,
-        downvotes: 0,
         replies: [],
+        request: 0, // Incluir el campo request con valor 0
       });
       setComment('');
       setName('');
@@ -66,93 +61,82 @@ const Comments: React.FC<{ postId: string }> = ({ postId }) => {
           content: data.content,
           createdAt: data.createdAt.toDate(),
           name: data.name,
-          upvotes: data.upvotes || 0,
-          downvotes: data.downvotes || 0,
           replies: data.replies || [],
+          request: data.request || 0, // Asegurarse de que el campo request esté presente
         } as Comment;
       });
       setComments(commentsData);
     }
   };
 
-  const handleUpvote = async (id: string) => {
-    const commentRef = doc(db, 'comments', id);
-    const comment = comments.find(c => c.id === id);
-    if (comment) {
-      await updateDoc(commentRef, { upvotes: comment.upvotes + 1 });
-      setComments(comments.map(c => c.id === id ? { ...c, upvotes: c.upvotes + 1 } : c));
-    }
-  };
-
-  const handleDownvote = async (id: string) => {
-    const commentRef = doc(db, 'comments', id);
-    const comment = comments.find(c => c.id === id);
-    if (comment) {
-      await updateDoc(commentRef, { downvotes: comment.downvotes + 1 });
-      setComments(comments.map(c => c.id === id ? { ...c, downvotes: c.downvotes + 1 } : c));
-    }
-  };
-
   return (
-    <div className="comment-div">
+    <Box sx={{ margin: '6rem auto' }}>
       <h3>Comentarios</h3>
-      <div className="comment-form">
+      <Box
+        component="form"
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(12, 1fr)',
+          gap: 2,
+          margin: '2rem auto',
+        }}
+      >
         <TextField
           label="Nombre"
           value={name}
           onChange={(e) => setName(e.target.value)}
           variant="outlined"
-          className="name-input"
+          sx={{ gridColumn: 'span 3' }}
         />
         <TextField
           label="Comentario"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
           variant="outlined"
-          className="comment-input"
+          sx={{ gridColumn: 'span 7' }}
         />
         <Button
           variant="contained"
           color="primary"
           onClick={handleAddComment}
-          className="submit-button"
+          sx={{ gridColumn: 'span 2' }}
           disabled={!name.trim() || !comment.trim()}
         >
           Enviar
         </Button>
-      </div>
-      <ul className="comment-list">
+      </Box>
+      <ul style={{ listStyleType: 'none', padding: 0 }}>
         {comments.map((c) => (
           <TextBox variant="background-text" style={{ marginBottom: '1rem' }} key={c.id}>
             <li>
-              <div style={{display:"flex"}}>
+              <Box sx={{ display: 'flex' }}>
                 <AccountCircleIcon className="user-icon" />
                 <strong className="comment-author">{c.name}</strong>
-              </div>
-              <div className="comment-content-wrapper">
+              </Box>
+              <Box className="comment-content-wrapper">
                 <p className="comment-content">{c.content}</p>
                 <small className="comment-date">{c.createdAt.toLocaleString()}</small>
                 {c.replies && c.replies.length > 0 && (
                   <ul className="reply-list">
                     {c.replies.map((reply) => (
                       <li key={reply.id} className="reply-item">
-                       <div style={{display:"flex"}}>
+                        <Box sx={{ display: 'flex' }}>
                           <img src="/maurodev.webp" alt="MauroDev" className="user-icon" />
                           <strong className="comment-author">MauroDev</strong>
-                        </div>
-                        <div className="comment-content-wrapper">
+                        </Box>
+                        <Box className="comment-content-wrapper">
                           <p className="comment-content">{reply.content}</p>
-                        </div>
+                        </Box>
                       </li>
                     ))}
                   </ul>
                 )}
-              </div>
+              </Box>
             </li>
           </TextBox>
         ))}
       </ul>
-    </div>
+    </Box>
   );
 };
 

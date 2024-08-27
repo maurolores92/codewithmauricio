@@ -15,7 +15,6 @@ export { client };
 export async function getBlogPostById(entryId: string): Promise<Entry<any> | undefined> {
   try {
     const entry = await client.getEntry(entryId);
-    console.log(entry); // Mostrar el post en consola
     return entry;
   } catch (error) {
     console.error('Error fetching blog post by ID:', error);

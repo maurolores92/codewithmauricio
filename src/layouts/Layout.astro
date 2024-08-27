@@ -20,6 +20,8 @@ const { title, description } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="/css/style.css" />
         <link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico?v=2" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
@@ -35,9 +37,7 @@ const { title, description } = Astro.props;
             content="mauroDev, portfolio, portafolio,  programmer, programador, desarrollador front-end, 
             back-end, Desarrollo web, diseño web, html, css, javascript"
         />
-
         <meta name="color-scheme" content="light only" />
-
         <meta property="og:url" content="https://codewithmauricio.tech" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="MauroDev" />
@@ -46,7 +46,6 @@ const { title, description } = Astro.props;
         <meta property="og:site_name" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
-
         <meta name="card" content="summary_large_image" />
         <meta name="title" content="MauroDev" />
         <meta name="description" content={description} />
@@ -54,7 +53,6 @@ const { title, description } = Astro.props;
         <meta property="domain" content="codewithmauricio.tech" />
         <meta property="url" content="https://codewithmauricio.tech" />
         <link rel="canonical" href="https://www.codewithmauricio.tech/" />
-        
         <title>{title}</title>
         <Global styles={NormalizeCSS} />
         <fragment set:html={`<script async src="https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsID}"></script>
@@ -64,6 +62,8 @@ const { title, description } = Astro.props;
           gtag('js', new Date());
           gtag('config', '${googleAnalyticsID}');
         </script>`} />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
         <script>
             const theme = localStorage.getItem("theme");
             const body = document.body;

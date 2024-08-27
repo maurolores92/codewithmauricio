@@ -17,7 +17,6 @@ streamToPromise(Readable.from(links).pipe(stream))
   .then((data) => {
     const sitemap = data.toString();
     fs.writeFileSync("./dist/sitemap.xml", sitemap);
-    console.log("Sitemap generated successfully.");
   })
   .catch((err) => {
     console.error("Error generating sitemap:", err);

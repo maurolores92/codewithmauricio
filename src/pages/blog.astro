@@ -1,9 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getBlogPosts } from '../fetchBlogPosts';
-import '../styles/blog.css'; // Importar el archivo CSS
-import type { BlogPost } from "types";
-import BlogContent from "@modules/Blog/BlogContent";
+import { getBlogPosts } from '@utils/fetchBlogPosts';
+import type { BlogPost } from "@utils/types";
+import BlogContent from "@modules/Blog";
 
 // @ts-ignore
 const posts: BlogPost[] = await getBlogPosts();
@@ -14,7 +13,6 @@ const posts: BlogPost[] = await getBlogPosts();
     description="Lee las últimas entradas del blog."
 >
     <main class="page-content">
-        <h1>Blog</h1>
         <BlogContent posts={posts} />
     </main>
 </Layout>
