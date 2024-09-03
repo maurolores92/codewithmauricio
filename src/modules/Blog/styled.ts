@@ -23,24 +23,30 @@ export const IntroductionSection = styled.section`
 `;
 
 export const BlogPostList = styled.ul`
-    padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Por defecto, 1 columna */
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para tabletas */
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas para escritorio */
+  }
 `;
 
 export const BlogPostItem = styled.li`
-    display: flex;
-    margin: 4rem 0;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-    flex-direction: row;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    list-style: none;
-
-    ${MediaQuery.max("md")} {
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  list-style: none;
 `;
 
 export const BlogPostImage = styled.div`
