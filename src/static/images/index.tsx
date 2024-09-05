@@ -8,6 +8,7 @@ import Fixitpc from "./fixitpc.webp";
 import GammingStore from "./GammingStore.webp";
 import thewinenation from "./thewinenation.webp";
 import IndumentariasBilly from "./IndumentariasBilly.webp";
+import Noctech from "./Noctech.png";
 
 export const images = {
     logo: LogoImage,
@@ -19,6 +20,7 @@ export const images = {
     GammingStore: GammingStore,
     thewinenation: thewinenation,
     IndumentariasBilly: IndumentariasBilly,
+    noctech: Noctech,
 };
 
 type ImageProps = {
@@ -68,4 +70,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly };
+export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech };

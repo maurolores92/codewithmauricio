@@ -1,4 +1,4 @@
-import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly  } from "@static/images";
+import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech  } from "@static/images";
 
 export const ProjectsData = [
     {
@@ -36,6 +36,42 @@ export const ProjectsData = [
 
                 <br /> <br />
                 La tienda online fue desarrollada con React y TypeScript.
+            </p>
+        `,
+    },
+    {
+        title: "Noctech",
+        image: {
+            src: Noctech.src,
+            width: Noctech.width,
+            height: Noctech.height,
+            alt: "Noctech",
+        },
+        links: [
+            {
+                title: "Visitar",
+                link: "https://noctech.online/",
+            }
+        ],
+        extraInfo: [
+            {
+                title: "Tecnologias y Herramientas",
+                description: "Astro, React, Typescript, MySQL, Docker, NodeJs",
+            },
+            {
+                title: "Fecha",
+                description: "2024-01-01",
+            },
+            {
+                title: "Cliente",
+                description: "Noctech",
+            },
+        ],
+        content: `
+            <h3>Noctech</h3>
+            <p>
+                NocTech es una herramienta diseñada específicamente para operadores de Centros de Operaciones de Red (NOC) que facilita la gestión integral de reclamos de clientes y el monitoreo de conexiones. La plataforma permite a los operadores mantener un control preciso de cada reclamo, actualizando su estado y manteniendo informado al equipo sobre los avances. Además, NocTech ofrece funciones avanzadas como pruebas de conectividad mediante ICMP, identificación de fabricantes de direcciones MAC, verificación del propietario de direcciones IP, y la capacidad de conectarse a antenas Ubiquiti para obtener información detallada de la señal, potencia y configuración del cliente. 
+
             </p>
         `,
     },
