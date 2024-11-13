@@ -3,9 +3,9 @@ import * as S from "./styled";
 import { Button } from "@components/Button";
 import { Container } from "@components/Container";
 import { Socials } from "@components/Socials";
-
 import SamplePdf from "@static/sample.pdf";
 import { FadeIn } from "@utils/animations/FadeIn";
+
 export const Hero: FC = () => {
     return (
         <S.HeroWrapper>
