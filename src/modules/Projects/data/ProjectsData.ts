@@ -1,4 +1,4 @@
-import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech  } from "@static/images";
+import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection  } from "@static/images";
 
 export const ProjectsData = [
     {
@@ -36,6 +36,44 @@ export const ProjectsData = [
 
                 <br /> <br />
                 La tienda online fue desarrollada con React y TypeScript.
+            </p>
+        `,
+    },
+    {
+        title: "Hernz Dental Connection",
+        image: {
+            src: Hernzdentalconnection.src,
+            width: Hernzdentalconnection.width,
+            height: Hernzdentalconnection.height,
+            alt: "Hernz Dental connection",
+        },
+        links: [
+            {
+                title: "Visitar",
+                link: "https://hernzdentalconnection.com/",
+            },
+        ],
+        extraInfo: [
+            {
+                title: "Tecnologias y Herramientas",
+                description: "React, TypeScript, Brevo, Firebase, Styled Components",
+            },
+            {
+                title: "Fecha",
+                description: "2024-11-13",
+            },
+            {
+                title: "Cliente",
+                description: "Hernz Dental Connection",
+            },
+        ],
+        content: `
+            <h3>Hernz Dental Connection</h3>
+            <p>
+                Encuentre un dentista cerca de usted, reserve una cita fácilmente y permita que los dentistas de California consigan nuevos pacientes. 
+
+                <br /> <br />
+                La pagina web fue desarrollada con React y TypeScript.
             </p>
         `,
     },
