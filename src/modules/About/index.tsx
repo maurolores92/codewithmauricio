@@ -70,28 +70,28 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
                                         bgText="Junior"
                                     >
                                         <h4>Javascript</h4>
-                                        <p>3 años</p>
+                                        <p>4 años</p>
                                     </TextBox>
                                     <TextBox
                                         variant="background-text"
                                         bgText="Junior"
                                     >
                                         <h4>React</h4>
-                                        <p>2 años</p>
+                                        <p>3 años</p>
                                     </TextBox>
                                     <TextBox
                                         variant="background-text"
                                         bgText="junior"
                                     >
                                         <h4>Next.js</h4>
-                                        <p>2 años</p>
+                                        <p>3 años</p>
                                     </TextBox>
                                     <TextBox
                                         variant="background-text"
                                         bgText="Junior"
                                     >
                                         <h4>Figma</h4>
-                                        <p>1 año</p>
+                                        <p>2 año</p>
                                     </TextBox>
                                 </S.AboutContentBoxesWrapper>
                                 <Button link="/about">Ver mas</Button>

@@ -10,6 +10,8 @@ import thewinenation from "./thewinenation.webp";
 import IndumentariasBilly from "./IndumentariasBilly.webp";
 import Noctech from "./Noctech.png";
 import Hernzdentalconnection from "./Hernzdentalconnection.png";
+import Lumiflowca from "./Lumiflowca.png";
+import Sagcomstore from "./Sagcomstore.png";
 
 export const images = {
     logo: LogoImage,
@@ -23,6 +25,8 @@ export const images = {
     IndumentariasBilly: IndumentariasBilly,
     noctech: Noctech,
     hernzdentalconnection: Hernzdentalconnection,
+    lumiflowca: Lumiflowca,
+    sagcomstore: Sagcomstore
 };
 
 type ImageProps = {
@@ -72,4 +76,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection };
+export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore };
