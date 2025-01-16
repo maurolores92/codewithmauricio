@@ -1,6 +1,62 @@
-import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore   } from "@static/images";
+import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor   } from "@static/images";
 
 export const HomepageData = [
+    {
+        title: "Javimotor",
+        image: {
+            src: Javimotor.src,
+            width: Javimotor.width,
+            height: Javimotor.height,
+            alt: "JaviMotor",
+        },
+        links: [
+            {
+                title: "Visitar",
+                link: "https://javimotor.com/",
+            },
+        ],
+        extraInfo: [
+            {
+                title: "Tecnologias y Herramientas",
+                description: "Wordpress, PHP, Astro, WPforms, All In One SEO, HTML-CSS, Google Analytics",
+            },
+            {
+                title: "Fecha",
+                description: "2025-01-30",
+            },
+            {
+                title: "Cliente",
+                description: "Javimotor",
+            },
+        ],
+        content: `
+            <h2>¡Bienvenidos a JaviMotor!</h2> 
+            <p>Me complace presentarles mi último proyecto de desarrollo web: <strong>Javimotor</strong>, una tienda virtual moderna y funcional creada con WordPress. 
+            En combinación con el tema base <em>Astro</em>, logramos una plataforma intuitiva y visualmente atractiva que se ajusta a las necesidades de nuestros clientes.</p> 
+            
+            <h3>Tecnologías Utilizadas</h3> 
+            <p>Para este proyecto, he utilizado <strong>WordPress</strong> como el sistema de gestión de contenidos principal. La versatilidad y las numerosas características 
+            de WordPress nos permitieron crear una tienda online eficiente y fácil de gestionar.</p> 
+            
+            <h3>Características Destacadas:</h3> 
+            
+            <ul> 
+            <li><strong>Diseño Responsive 📱:</strong> Compatible con todos los dispositivos, asegurando una experiencia óptima tanto en móviles como en escritorio.</li> 
+            <li><strong>Optimización SEO 📈:</strong> Implementamos técnicas avanzadas de SEO para mejorar la visibilidad de la tienda en los motores de búsqueda.</li> 
+            <li><strong>Integración de Plugins ⚙️:</strong> 
+            <ul> 
+
+            <li>Formularios de Contacto: Instalamos plugins como WPForms para facilitar la comunicación con nuestros clientes.</li> 
+            <li>SEO: Utilizamos plugins como Yoast SEO para asegurar que todas las páginas de la tienda estén optimizadas.</li>
+
+            </ul> 
+            </li>
+             <li><strong>Plantilla Base Astro 🌟:</strong> Elegimos el tema Astero por su flexibilidad y diseño elegante, permitiéndonos personalizar la tienda según nuestras 
+             necesidades específicas.</li> 
+             </ul> 
+             <p>Explora Javimotor y descubre una nueva forma de comprar en línea: <a href="https://www.javimotor.com">javimotor.com</a></p>
+        `,
+    },
     {
         title: "Sagcom Store",
         image: {
