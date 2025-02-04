@@ -1,6 +1,59 @@
-import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor  } from "@static/images";
+import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy  } from "@static/images";
 
 export const ProjectsData = [
+    {
+        title: "Blue Wave Energy",
+        image: {
+          src: BlueWaveEnergy.src,
+          width: BlueWaveEnergy.width,
+          height: BlueWaveEnergy.height,
+          alt: "Blue Wave Energy",
+        },
+        links: [
+          {
+            title: "Visitar",
+            link: "https://bluewave-energy.com/",
+          },
+        ],
+        extraInfo: [
+          {
+            title: "Tecnologías y Herramientas",
+            description: "WordPress, PHP, Astro, WPForms, All In One SEO, HTML-CSS, Google Analytics",
+          },
+          {
+            title: "Fecha",
+            description: "2025-02-22",
+          },
+          {
+            title: "Cliente",
+            description: "Blue Wave Energy",
+          },
+        ],
+        content: `
+          <h2>¡Bienvenidos a Blue Wave Energy!</h2>
+          <p>Nos enorgullece presentar nuestro último proyecto de desarrollo web: <strong>Blue Wave Energy</strong>, una empresa norteamericana dedicada al uso de energía solar y fuentes de energía limpia. 
+          Hemos creado una plataforma moderna y funcional utilizando WordPress, combinada con el tema <em>Astro</em> para una apariencia intuitiva y visualmente atractiva que se ajusta a las necesidades de la empresa.</p>
+          
+          <h3>Tecnologías Utilizadas</h3>
+          <p>Para este proyecto, hemos empleado <strong>WordPress</strong> como el sistema de gestión de contenidos principal, debido a su versatilidad y numerosas características que nos permitieron desarrollar una web eficiente y amigable.</p>
+          
+          <h3>Características Destacadas:</h3>
+          
+          <ul>
+            <li><strong>Diseño Responsive 📱:</strong> Compatible con todos los dispositivos, asegurando una experiencia óptima tanto en móviles como en escritorio.</li>
+            <li><strong>Optimización SEO 📈:</strong> Implementamos técnicas avanzadas de SEO para mejorar la visibilidad de la empresa en los motores de búsqueda.</li>
+            <li><strong>Integración de Plugins ⚙️:</strong>
+              <ul>
+                <li>Formularios de Contacto: Utilizamos plugins como WPForms para facilitar la comunicación con los clientes.</li>
+                <li>SEO: Empleamos plugins como Yoast SEO para asegurar que todas las páginas estén optimizadas.</li>
+              </ul>
+            </li>
+            <li><strong>Plantilla Base Astro 🌟:</strong> Elegimos el tema Astro por su flexibilidad y diseño elegante, permitiéndonos personalizar la web según los requerimientos específicos.</li>
+          </ul>
+          <p>Explora Blue Wave Energy y descubre más sobre energías limpias y sostenibles: <a href="https://bluewave-energy.com">bluewave-energy.com</a></p>
+        `,
+      },
+      
     {
             title: "Javimotor",
             image: {

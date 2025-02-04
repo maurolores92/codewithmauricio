@@ -13,6 +13,7 @@ import Hernzdentalconnection from "./Hernzdentalconnection.png";
 import Lumiflowca from "./Lumiflowca.png";
 import Sagcomstore from "./Sagcomstore.png";
 import Javimotor from "./Javimotor.png";
+import BlueWaveEnergy from "./BlueWaveEnergy.png";
 
 export const images = {
     logo: LogoImage,
@@ -29,6 +30,7 @@ export const images = {
     lumiflowca: Lumiflowca,
     sagcomstore: Sagcomstore,
     javimotor: Javimotor,
+    BlueWaveEnergy: BlueWaveEnergy,
 };
 
 type ImageProps = {
@@ -78,4 +80,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor };
+export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy };
