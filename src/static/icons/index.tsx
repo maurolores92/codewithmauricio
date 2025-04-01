@@ -14,6 +14,7 @@ import IconTwitter from "./icon-twitter.svg";
 import IconLinkedIn from "./icon-linkedin.svg";
 import IconGithub from "./icon-github.svg";
 import IconWhatsapp from "./icon-whatsapp.svg";
+import IconFiver from "./icon-fiver.svg";
 
 export const icons = {
     home: IconHome,
@@ -30,6 +31,7 @@ export const icons = {
     linkedin: IconLinkedIn,
     github: IconGithub,
     whatsapp: IconWhatsapp,
+    fiver: IconFiver,
 };
 
 type IconName = {
@@ -85,6 +87,7 @@ import IconLogo24 from "./32.png";
 import IconLogo25 from "./33.png";
 import IconLogo26 from "./34.png";
 import IconLogo27 from "./35.png";
+
 
 
 // logos saved as svg export them as components

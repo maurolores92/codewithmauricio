@@ -51,6 +51,15 @@ export const Socials: FC = ({ ...rest }) => {
                         <Icon iconData="instagram" alt="instagram" />
                     </S.SocialsLink>
                 </S.SocialsListItem>
+                <S.SocialsListItem>
+                    <S.SocialsLink
+                        href="https://es.fiverr.com/s/P2W3eqP"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Icon iconData="fiver" alt="fiver" />
+                    </S.SocialsLink>
+                </S.SocialsListItem>
             </S.SocialsList>
         </S.SocialsStyled>
     );
