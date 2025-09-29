@@ -4,16 +4,13 @@ import Preview from "./preview.webp";
 import MauroDev from "./maurodev.webp";
 import lacostillita from "./lacostillita.webp";
 import TECHapp from "./TECHapp.webp";
-import Fixitpc from "./fixitpc.webp";
-import GammingStore from "./GammingStore.webp";
 import thewinenation from "./thewinenation.webp";
-import IndumentariasBilly from "./IndumentariasBilly.webp";
-import Noctech from "./Noctech.png";
 import Hernzdentalconnection from "./Hernzdentalconnection.png";
 import Lumiflowca from "./Lumiflowca.png";
 import Sagcomstore from "./Sagcomstore.png";
 import Javimotor from "./Javimotor.png";
 import BlueWaveEnergy from "./BlueWaveEnergy.png";
+import CrealabStudio from "./CrealabStudio.png";
 
 export const images = {
     logo: LogoImage,
@@ -21,16 +18,13 @@ export const images = {
     MauroDev: MauroDev,
     lacostillita: lacostillita,
     TECHapp: TECHapp,
-    Fixitpc: Fixitpc,
-    GammingStore: GammingStore,
     thewinenation: thewinenation,
-    IndumentariasBilly: IndumentariasBilly,
-    noctech: Noctech,
     hernzdentalconnection: Hernzdentalconnection,
     lumiflowca: Lumiflowca,
     sagcomstore: Sagcomstore,
     javimotor: Javimotor,
     BlueWaveEnergy: BlueWaveEnergy,
+    CrealabStudio: CrealabStudio,
 };
 
 type ImageProps = {
@@ -80,4 +74,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy };
+export { Preview, TECHapp, lacostillita, thewinenation, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy, CrealabStudio };

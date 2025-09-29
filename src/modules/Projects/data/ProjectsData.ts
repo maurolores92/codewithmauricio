@@ -1,6 +1,56 @@
-import {  TECHapp, lacostillita, Fixitpc, GammingStore, thewinenation, IndumentariasBilly, Noctech, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy  } from "@static/images";
+import {  TECHapp, lacostillita, thewinenation, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy, CrealabStudio  } from "@static/images";
 
 export const ProjectsData = [
+    {
+        title: "Crealab Studio",
+        image: {
+          src: CrealabStudio.src,
+          width: CrealabStudio.width,
+          height: CrealabStudio.height,
+          alt: "CrealabStudio",
+        },
+        links: [
+          {
+            title: "Visitar",
+            link: "https://crealabstudio.com.ar/",
+          },
+        ],
+        extraInfo: [
+          {
+            title: "Tecnologías y Herramientas",
+            description: "WordPress, PHP, WPForms, All In One SEO, HTML-CSS, Google Analytics",
+          },
+          {
+            title: "Fecha",
+            description: "2025-08-01",
+          },
+          {
+            title: "Cliente",
+            description: "Crealab Studio",
+          },
+        ],
+        content: `
+          <h2>¡Bienvenidos a Crealab Studio!</h2>
+            <p>Nos complace presentar <strong>Crealab Studio</strong>, nuestro espacio creativo y técnico especializado en impresión 3D personalizada, branding estratégico, desarrollo web, automatización avanzada y mentoring familiar.</p>
+            <p>Este sitio fue diseñado como una plataforma moderna y funcional, desarrollada con <strong>WordPress</strong> y potenciada por el tema <em>Astro</em>, para ofrecer una experiencia visual intuitiva, adaptable y profesional que refleja nuestra filosofía de trabajo: soluciones reproducibles, organizadas y escalables.</p>
+          <h3>Tecnologías Utilizadas</h3>
+          <p>Para este proyecto, hemos empleado <strong>WordPress</strong> como el sistema de gestión de contenidos principal, debido a su versatilidad y numerosas características que nos permitieron desarrollar una web eficiente y amigable.</p>
+          
+          <h3>Características Destacadas:</h3>
+          
+          <ul>
+            <li><strong>Diseño Responsive 📱:</strong> Compatible con todos los dispositivos, asegurando una experiencia óptima tanto en móviles como en escritorio.</li>
+            <li><strong>Optimización SEO 📈:</strong> Implementamos técnicas avanzadas de SEO para mejorar la visibilidad de la empresa en los motores de búsqueda.</li>
+            <li><strong>Integración de Plugins ⚙️:</strong>
+              <ul>
+                <li>Formularios de Contacto: Utilizamos plugins como WPForms para facilitar la comunicación con los clientes.</li>
+                <li>SEO: Empleamos plugins como Yoast SEO para asegurar que todas las páginas estén optimizadas.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>Explora Crealab Studio y descubre más sobre energías limpias y sostenibles: crealabstudio.com.ar</p>
+        `,
+      },
     {
         title: "Blue Wave Energy",
         image: {
@@ -335,65 +385,6 @@ export const ProjectsData = [
         `,
     },
     {
-        title: "Noctech",
-        image: {
-            src: Noctech.src,
-            width: Noctech.width,
-            height: Noctech.height,
-            alt: "Noctech",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://noctech.online/",
-            }
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas",
-                description: "Astro, React, Typescript, MySQL, Docker, NodeJs",
-            },
-            {
-                title: "Fecha",
-                description: "2024-01-01",
-            },
-            {
-                title: "Cliente",
-                description: "Noctech",
-            },
-        ],
-        content: `
-            <h2>¡Conoce NocTech!</h2> 
-            <p>NocTech es una herramienta personalizada diseñada específicamente para operadores de Centros de Operaciones de Red (NOC), facilitando la gestión integral de 
-                reclamos de clientes y el monitoreo de conexiones. Esta plataforma innovadora permite a los operadores mantener un control preciso de cada reclamo, actualizando 
-                su estado y manteniendo informado al equipo sobre los avances.</p> 
-                
-            <h3>Tecnologías Utilizadas</h3> 
-            <p>Para desarrollar NocTech, se emplearon una variedad de tecnologías modernas que aseguran un rendimiento robusto y una experiencia de usuario fluida:</p> 
-            
-            <ul> 
-                <li><strong>React:</strong> Utilizado como la biblioteca principal para la creación de la interfaz de usuario.</li> 
-                <li><strong>TypeScript:</strong> Empleado para asegurar un código más limpio y manejable.</li> 
-                <li><strong>Node.js:</strong> Utilizado para el backend, manejando las operaciones del servidor.</li> 
-                <li><strong>MySQL:</strong> Base de datos utilizada para almacenar información crítica.</li> 
-                <li><strong>Sequelize:</strong> ORM (mapeo objeto-relacional) para interactuar eficientemente con la base de datos.</li> 
-                <li><strong>Docker:</strong> Utilizado para contenerización, asegurando un despliegue consistente.</li> 
-                <li><strong>Material-UI:</strong> Biblioteca de componentes para React que permite crear interfaces de usuario elegantes y modernas.</li> 
-            </ul> 
-            
-            <h3>Características Destacadas:</h3> 
-            <ul> 
-                <li><strong>Pruebas de Conectividad mediante ICMP 📶:</strong> Verificación rápida y eficiente de la conectividad de red.</li> 
-                <li><strong>Identificación de Fabricantes de Direcciones MAC 🏷️:</strong> Permite identificar al fabricante del dispositivo conectado a la red.</li> 
-                <li><strong>Verificación del Propietario de Direcciones IP 🌐:</strong> Asegura una mayor transparencia y control sobre las conexiones.</li>
-                <li><strong>Conexión a Antenas Ubiquiti 📡:</strong> Obtención de información detallada sobre la señal, potencia y configuración del cliente.</li> 
-                <li><strong>Gestión de Reclamos en Tiempo Real 📋:</strong> Actualización constante del estado de los reclamos y comunicación fluida entre el equipo.</li> 
-            </ul> 
-            
-            <p>NocTech es un proyecto personal que he desarrollado mientras trabajo como operador NOC, y es una herramienta que utilizo personalmente para mejorar la eficiencia y precisión en la gestión de redes.</p>
-        `,
-    },
-    {
         title: "Proyecto La Costillita",
         image: {
             src: lacostillita.src,
@@ -452,101 +443,7 @@ export const ProjectsData = [
             <p>Descubre el sabor auténtico de La Costillita y explora nuestra nueva página web: <a href="https://lacostillita.com.ar">lacostillita.com.ar</a></p>
         `,
     },
-    {
-        title: "Proyecto Indumentarias Billy",
-        image: {
-            src: IndumentariasBilly.src,
-            width: IndumentariasBilly.width,
-            height: IndumentariasBilly.height,
-            alt: "IndumentariasBylly",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://www.indumentariasbilly.com/",
-            }
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas", 
-                description: "Wordpress, Elementor, Php",
-            },
-            {
-                title: "Fecha",
-                description: "2024-01-01",
-            },
-            {
-                title: "Cliente",
-                description: "Indumentarias Billy",
-            },
-        ],
-        content: `
-                        <h2>¡Bienvenidos a Indumentarias Billy!</h2> 
-            <p>Indumentarias Billy es una tienda de ropa online que ofrece una amplia selección de indumentaria deportiva y casual. Nos enorgullece presentarles nuestro sitio web, 
-                diseñado para brindar una experiencia de compra cómoda y atractiva.</p> 
-                
-            <h3>Tecnologías Utilizadas</h3> 
-            <p>Para desarrollar el sitio web de Indumentarias Billy, empleamos diversas tecnologías que nos permitieron crear una experiencia de usuario óptima:</p> 
-            
-            <ul> 
-                <li><strong>WordPress:</strong> Utilizado como el CMS (Sistema de Gestión de Contenidos) principal.</li> 
-                <li><strong>Elementor:</strong> Utilizado para construir y diseñar visualmente las páginas.</li> 
-                <li><strong>PHP:</strong> Modificamos ciertos aspectos del código PHP para personalizar funcionalidades específicas.</li> 
-                <li><strong>Plugins:</strong> 
-                    <ul> 
-                        <li>Formularios: Implementamos plugins como Contact Form 7 para facilitar la comunicación con nuestros clientes.</li> 
-                        <li>SEO: Utilizamos plugins como Yoast SEO para optimizar la visibilidad del sitio en los motores de búsqueda.</li> 
-                    </ul> 
-                </li> 
-            </ul> 
-            
-            <h3>Características Destacadas:</h3> 
-            <ul> 
-                <li><strong>Diseño Moderno y Responsive 👕:</strong> Asegurando una experiencia de usuario excepcional en todos los dispositivos.</li> 
-                <li><strong>Optimización SEO 📈:</strong> Mejoramos la visibilidad del sitio web en los motores de búsqueda para que más clientes puedan encontrarnos.</li> 
-                <li><strong>Formularios de Contacto Funcionales 📧:</strong> Facilitan la comunicación con nuestros clientes y la realización de consultas.</li> 
-                <li><strong>Personalización con PHP 🤓:</strong> Adaptamos el sitio a nuestras necesidades específicas mediante modificaciones en PHP.</li> 
-            </ul> 
-            
-            <p>Explora Indumentarias Billy y descubre nuestra amplia gama de productos deportivos y casuales: <a href="https://indumentariasbilly.com">indumentariasbilly.com</a></p>
-        `,
-    },
-    {
-        title: "Proyecto Fix It PC",
-        image: {
-            src: Fixitpc.src,
-            width: Fixitpc.width,
-            height: Fixitpc.height,
-            alt: "Proyecto Fix It PC",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://fixitpc.online/",
-            }
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas", 
-                description: "Html, Css, JavaScript",
-            },
-            {
-                title: "Fecha",
-                description: "2024-01-01",
-            },
-            {
-                title: "Cliente",
-                description: "Fix It PC",
-            },
-        ],
-        content: `
-            <h3>Fix It PC</h3>
-            <p>
-                Fix It PC es una tienda de reparación de computadoras que ofrece una amplia selección de 
-                servicios de reparación y mantenimiento de computadoras.
-            </p>
-        `,
-    },
+    
     {
         title: "TECHapp",
         image: {
@@ -580,43 +477,6 @@ export const ProjectsData = [
             <p>
                 TECHapp es una aplicación de diseño de interfaz de usuario que ofrece una amplia selección de 
                 diseños de interfaces intuitivas y atractivas que mejoran la experiencia del usuario.
-            </p>
-        `,
-    },
-    {
-        title: "Gamming Store",
-        image: {
-            src: GammingStore.src,
-            width: GammingStore.width,
-            height: GammingStore.height,
-            alt: "Gamming Store",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://maurolores92.github.io/Gamming-Store/",
-            }
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas",
-                description: "Html 5, Css 3, JavaScript",
-            },
-            {
-                title: "Fecha",
-                description: "2024-01-01",
-            },
-            {
-                title: "Caso de Estudio",
-                description: "Gamming Store",
-            },
-        ],
-        content: `
-            <h3>Gamming Store</h3>
-            <p>
-                Gamming Store es una tienda de videojuegos online. Es un proyecto personal que realicé para el 
-                curso de Javascript de CoderHouse.
-
             </p>
         `,
     },
