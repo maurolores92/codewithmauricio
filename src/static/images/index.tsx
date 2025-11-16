@@ -36,10 +36,6 @@ type ImageProps = {
     loading?: "lazy" | "eager";
 };
 
-/**
- * @example
- * <Image src="logo" alt="logo" width="50px" height="50px" />
- */
 export const Image: FC<ImageProps> = ({
     alt,
     srcLocal,
@@ -67,8 +63,8 @@ export const Image: FC<ImageProps> = ({
             alt={alt}
             width={width ? width : image.width}
             height={height ? height : image.height}
-            loading={loading}
             {...rest}
+            loading="lazy" 
         />
     );
 };

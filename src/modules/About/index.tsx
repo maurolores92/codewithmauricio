@@ -96,6 +96,7 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
                                 alt="MauroDev"
                                 width={500}
                                 height={500}
+                                loading="lazy"
                             />
                         </FadeIn>
                     </S.AboutContentImage>

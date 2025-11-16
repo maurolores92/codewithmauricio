@@ -91,13 +91,14 @@ export const ImageModal: FC<ImageModalProps> = ({
                         alt={image.alt}
                         width={image.width}
                         height={image.height}
+                        loading="lazy"
                     />
                 </S.ImagePreview>
             </FadeIn>
             <S.ImageModalContent $isOpen={open} ref={modalRef}>
                 <S.ImageModalContainer className="modal-content">
                     <S.ImageModalImage>
-                        <img src={image.src} alt={image.alt} />
+                        <img src={image.src} alt={image.alt} loading="lazy" />
                     </S.ImageModalImage>
                     <S.ImageModalLinks>
                         {links.map((link, index) => (

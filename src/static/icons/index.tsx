@@ -56,6 +56,7 @@ export const Icon: FC<IconName> = ({ alt, iconData, ...rest }) => {
             height={icon.height}
             data-icon="true"
             {...rest}
+            loading="lazy" 
         />
     );
 };

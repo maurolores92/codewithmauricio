@@ -28,6 +28,7 @@ export const LogosSlider: FC = () => {
                     width={slide.logo.width}
                     height={slide.logo.height}
                     alt={slide.alt}
+                    loading="lazy"
                 />
             </FadeIn>
         </S.Logo>
@@ -44,6 +45,7 @@ export const LogosSlider: FC = () => {
                     width={slide.logo.width}
                     height={slide.logo.height}
                     alt={slide.alt}
+                    loading="lazy"
                 />
             </FadeIn>
         </S.Logo>
