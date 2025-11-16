@@ -139,7 +139,9 @@ export const Contact: FC = () => {
                         <p>Villa urquiza, Capital Federal - Argentina</p>
                     </TextBox>
                 </FadeIn>
+                
             </S.ContainerStyled>
+            
         </S.ContactStyled>
     );
 };

@@ -67,6 +67,12 @@ export const Projects: FC<ProjectsProps> = ({ data }) => {
                     </FadeIn>
                 )}
             </Container>
+            <div style={{ marginTop: '2rem', textAlign: 'center', fontSize: '1.1rem' }}>
+                ¿Te gustaría trabajar juntos en tu próximo proyecto?{' '}
+                <a href="/contact" style={{ color: '#4fa3f7', fontWeight: 'bold', textDecoration: 'underline' }}>
+                    Contáctame aquí
+                </a>.
+            </div>
         </S.ProjectsStyled>
     );
 };
