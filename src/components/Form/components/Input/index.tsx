@@ -20,9 +20,17 @@ export const Input: FC<InputProps> = ({
     const InputComponent =
         type === "textarea" ? S.InputTextAreaStyled : S.InputStyled;
 
+    // register can be a function or an object, but with react-hook-form v7+ it's an object
     return (
         <S.InputWrapper>
-            <InputComponent placeholder={placeholder} {...register} {...rest} />
+            <InputComponent
+                placeholder={placeholder}
+                name={register.name}
+                ref={register.ref}
+                onChange={register.onChange}
+                onBlur={register.onBlur}
+                {...rest}
+            />
             {error && <p>{error}</p>}
         </S.InputWrapper>
     );

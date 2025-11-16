@@ -22,17 +22,12 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
                     <S.AboutContentText>
                         <FadeIn>
                             <p>
-                            Soy un desarrollador web freelance con formación continua en Javascript y React. 
-                            Mi objetivo es crear soluciones web innovadoras, accesibles y funcionales, 
-                            que respondan a las necesidades y expectativas de los clientes y usuarios.
+                            Soy un desarrollador web freelance, especializado en soluciones full stack modernas y escalables. Me mantengo en formación continua en tecnologías como JavaScript, TypeScript y React, y trabajo tanto en frontend como en backend para crear productos innovadores, accesibles y funcionales que se adaptan a las necesidades de cada cliente y usuario.
                             </p>
 
                             <h3>¿Que puedo hacer?</h3>
                             <p>
-                            Desarrollo proyectos web de forma independiente, utilizando una amplia gama de herramientas y 
-                            tecnologías avanzadas, como TypeScript, React, Next.js, MySQL. 
-                            Mi experiencia en el desarrollo web me permite crear aplicaciones eficientes y de alto rendimiento,
-                            aprovechando las últimas tendencias y tecnologías del sector.
+                            Desarrollo proyectos web de forma independiente, utilizando herramientas avanzadas como React, Next.js, TypeScript, Node.js, Express y NestJS, además de bases de datos como MySQL. Mi experiencia me permite crear aplicaciones eficientes, seguras y de alto rendimiento, integrando las últimas tendencias y tecnologías del sector para ofrecer resultados profesionales y personalizados.
                             </p>
                         </FadeIn>
                         <FadeIn>
@@ -90,8 +85,8 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
                                         variant="background-text"
                                         bgText="Junior"
                                     >
-                                        <h4>Figma</h4>
-                                        <p>2 año</p>
+                                        <h4>NestJs</h4>
+                                        <p>1 año</p>
                                     </TextBox>
                                 </S.AboutContentBoxesWrapper>
                                 <Button link="/about">Ver mas</Button>

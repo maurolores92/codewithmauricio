@@ -328,62 +328,7 @@ export const ProjectsData = [
             <p>Explora The Wines Nation y descubre una nueva forma de comprar vinos en línea: <a href="https://thewinenation.com">thewinenation.com</a></p>
         `,
     },
-    {
-        title: "Hernz Dental Connection",
-        image: {
-            src: Hernzdentalconnection.src,
-            width: Hernzdentalconnection.width,
-            height: Hernzdentalconnection.height,
-            alt: "Hernz Dental connection",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://hernzdentalconnection.com/",
-            },
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas",
-                description: "React, TypeScript, Brevo, Firebase, Styled Components",
-            },
-            {
-                title: "Fecha",
-                description: "2024-11-13",
-            },
-            {
-                title: "Cliente",
-                description: "Hernz Dental Connection",
-            },
-        ],
-        content: `
-            <h2>¡Bienvenidos a Hernz Dental Connection!</h2> 
-            <p>Estoy encantado de presentarles mi último proyecto de desarrollo web: <strong>Hernz Dental Connection</strong>. Esta plataforma está diseñada para brindar 
-                servicios dentales de manera eficiente y accesible, utilizando tecnologías de vanguardia para asegurar una experiencia de usuario excepcional.</p> 
-                
-            <h3>Tecnologías Utilizadas</h3> 
-            <p>Para este proyecto, hemos aprovechado una combinación de tecnologías modernas que nos permitieron construir una plataforma robusta y fácil de usar:</p> 
-            
-            <ul> 
-                <li><strong>React:</strong> Utilizado como la biblioteca principal para crear la interfaz de usuario.</li> 
-                <li><strong>TypeScript:</strong> Empleado para asegurar un código más limpio y manejable.</li> 
-                <li><strong>Brevo:</strong> Herramienta que utilizamos para manejar los formularios de contacto, asegurando una comunicación fluida y eficiente.</li> 
-                <li><strong>Firebase:</strong> Nuestra base de datos en tiempo real, que almacena de manera segura toda la información necesaria.</li> 
-                <li><strong>Styled Components:</strong> Utilizado para diseñar componentes de React, permitiéndonos mantener un estilo consistente y modular.</li> 
-            </ul> 
-            
-            <h3>Características Destacadas:</h3> 
-            <ul> 
-                <li><strong>Diseño Responsive 🦷:</strong> Compatible con todos los dispositivos, garantizando una experiencia de usuario óptima tanto en móviles como en escritorio.</li> 
-                <li><strong>Formularios de Contacto Eficientes 📧:</strong> Implementados con Brevo para facilitar y asegurar la comunicación con los pacientes.</li> 
-                <li><strong>Base de Datos Firebase 🔥:</strong> Utilizada para almacenar información crítica de manera segura y accesible.</li> 
-                <li><strong>Componentes Estilizados:</strong> Gracias a Styled Components, cada parte del sitio tiene un estilo coherente y atractivo.</li> 
-                <li><strong>Rendimiento Elevado 🚀:</strong> React y TypeScript permiten un rendimiento superior, asegurando que todas las páginas se carguen rápidamente y sin problemas.</li> 
-            </ul> 
-            
-            <p>Explora Hernz Dental Connection y descubre cómo estamos revolucionando los servicios dentales en línea: <a href="https://hernzdentalconnection.com">hernzdentalconnection.com</a></p>
-        `,
-    },
+    
     {
         title: "Proyecto La Costillita",
         image: {

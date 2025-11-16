@@ -25,12 +25,7 @@ type ProjectsProps = {
     }[];
 };
 
-/**
- * Project is static, normally it should be fetched from the backend, retrieved in props and then used
- * in static project it can be use just like array of objects
- *
- * data moved to the separate file to keep the component clean
- */
+
 export const Projects: FC<ProjectsProps> = ({ data }) => {
     /**
      * List of the slides

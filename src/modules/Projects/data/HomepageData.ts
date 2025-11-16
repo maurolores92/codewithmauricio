@@ -104,59 +104,62 @@ export const HomepageData = [
         `,
       },
     {
-        title: "Javimotor",
+        title: "Proyecto La Costillita",
         image: {
-            src: Javimotor.src,
-            width: Javimotor.width,
-            height: Javimotor.height,
-            alt: "JaviMotor",
+            src: lacostillita.src,
+            width: lacostillita.width,
+            height: lacostillita.height,
+            alt: "Proyecto La Costillita",
         },
         links: [
             {
                 title: "Visitar",
-                link: "https://javimotor.com/",
-            },
+                link: "https://lacostillita.com.ar/",
+            }
         ],
         extraInfo: [
             {
                 title: "Tecnologias y Herramientas",
-                description: "Wordpress, PHP, Astro, WPforms, All In One SEO, HTML-CSS, Google Analytics",
+                description: "Wordpress, Elementor, Php",
             },
             {
                 title: "Fecha",
-                description: "2025-01-30",
+                description: "2024-01-01",
             },
             {
                 title: "Cliente",
-                description: "Javimotor",
+                description: "La Costillita",
             },
         ],
         content: `
-            <h2>¡Bienvenidos a JaviMotor!</h2> 
-            <p>Me complace presentarles mi último proyecto de desarrollo web: <strong>Javimotor</strong>, una tienda virtual moderna y funcional creada con WordPress. 
-            En combinación con el tema base <em>Astro</em>, logramos una plataforma intuitiva y visualmente atractiva que se ajusta a las necesidades de nuestros clientes.</p> 
-            
+            <h2>¡Bienvenidos a La Costillita!</h2> 
+            <p>La Costillita es una auténtica parrilla argentina que ofrece una amplia selección de carnes de alta calidad y platos típicos de la región. Nos enorgullece 
+                presentarles nuestra página web, diseñada para reflejar la tradición y el sabor único de nuestra oferta gastronómica.</p> 
+                
             <h3>Tecnologías Utilizadas</h3> 
-            <p>Para este proyecto, he utilizado <strong>WordPress</strong> como el sistema de gestión de contenidos principal. La versatilidad y las numerosas características 
-            de WordPress nos permitieron crear una tienda online eficiente y fácil de gestionar.</p> 
+            <p>Para desarrollar el sitio web de La Costillita, empleamos varias tecnologías que nos permitieron crear una experiencia de usuario óptima:</p> 
             
-            <h3>Características Destacadas:</h3> 
-            
-            <ul> 
-            <li><strong>Diseño Responsive 📱:</strong> Compatible con todos los dispositivos, asegurando una experiencia óptima tanto en móviles como en escritorio.</li> 
-            <li><strong>Optimización SEO 📈:</strong> Implementamos técnicas avanzadas de SEO para mejorar la visibilidad de la tienda en los motores de búsqueda.</li> 
-            <li><strong>Integración de Plugins ⚙️:</strong> 
-            <ul> 
-
-            <li>Formularios de Contacto: Instalamos plugins como WPForms para facilitar la comunicación con nuestros clientes.</li> 
-            <li>SEO: Utilizamos plugins como Yoast SEO para asegurar que todas las páginas de la tienda estén optimizadas.</li>
-
+            <ul>
+                <li><strong>WordPress:</strong> Utilizado como el CMS (Sistema de Gestión de Contenidos) principal.</li> 
+                <li><strong>Elementor:</strong> Utilizado para construir y diseñar visualmente las páginas.</li> 
+                <li><strong>PHP:</strong> Modificamos ciertas partes del código PHP para personalizar funcionalidades específicas.</li> 
+                <li><strong>Plugins:</strong> 
+                    <ul> 
+                        <li>Formularios: Implementamos plugins como Contact Form 7 para facilitar la comunicación con nuestros clientes.</li> 
+                        <li>SEO: Utilizamos plugins como Yoast SEO para optimizar la visibilidad del sitio en los motores de búsqueda.</li> 
+                    </ul> 
+                </li> 
             </ul> 
-            </li>
-             <li><strong>Plantilla Base Astro 🌟:</strong> Elegimos el tema Astero por su flexibilidad y diseño elegante, permitiéndonos personalizar la tienda según nuestras 
-             necesidades específicas.</li> 
-             </ul> 
-             <p>Explora Javimotor y descubre una nueva forma de comprar en línea: <a href="https://www.javimotor.com">javimotor.com</a></p>
+
+            <h3>Características Destacadas:</h3> 
+            <ul> 
+                <li><strong>Diseño Atractivo y Responsive:</strong> Asegurando una experiencia de usuario excepcional en todos los dispositivos.</li> 
+                <li><strong>Optimización SEO 📈:</strong> Mejoramos la visibilidad del sitio web en los motores de búsqueda para facilitar que más clientes nos encuentren.</li> 
+                <li><strong>Formularios de Contacto Funcionales 📧:</strong> Facilitan la reserva de mesas y la realización de consultas.</li> 
+                <li><strong>Personalización con PHP:</strong> Adaptamos el sitio a nuestras necesidades específicas mediante modificaciones en PHP.</li> 
+            </ul> 
+            
+            <p>Descubre el sabor auténtico de La Costillita y explora nuestra nueva página web: <a href="https://lacostillita.com.ar">lacostillita.com.ar</a></p>
         `,
     },
     {
@@ -327,119 +330,5 @@ export const HomepageData = [
             <p>Explora The Wines Nation y descubre una nueva forma de comprar vinos en línea: <a href="https://thewinenation.com">thewinenation.com</a></p>
         `,
     },
-    {
-        title: "Hernz Dental Connection",
-        image: {
-            src: Hernzdentalconnection.src,
-            width: Hernzdentalconnection.width,
-            height: Hernzdentalconnection.height,
-            alt: "Hernz Dental connection",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://hernzdentalconnection.com/",
-            },
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas",
-                description: "React, TypeScript, Brevo, Firebase, Styled Components",
-            },
-            {
-                title: "Fecha",
-                description: "2024-11-13",
-            },
-            {
-                title: "Cliente",
-                description: "Hernz Dental Connection",
-            },
-        ],
-        content: `
-            <h2>¡Bienvenidos a Hernz Dental Connection!</h2> 
-            <p>Estoy encantado de presentarles mi último proyecto de desarrollo web: <strong>Hernz Dental Connection</strong>. Esta plataforma está diseñada para brindar 
-                servicios dentales de manera eficiente y accesible, utilizando tecnologías de vanguardia para asegurar una experiencia de usuario excepcional.</p> 
-                
-            <h3>Tecnologías Utilizadas</h3> 
-            <p>Para este proyecto, hemos aprovechado una combinación de tecnologías modernas que nos permitieron construir una plataforma robusta y fácil de usar:</p> 
-            
-            <ul> 
-                <li><strong>React:</strong> Utilizado como la biblioteca principal para crear la interfaz de usuario.</li> 
-                <li><strong>TypeScript:</strong> Empleado para asegurar un código más limpio y manejable.</li> 
-                <li><strong>Brevo:</strong> Herramienta que utilizamos para manejar los formularios de contacto, asegurando una comunicación fluida y eficiente.</li> 
-                <li><strong>Firebase:</strong> Nuestra base de datos en tiempo real, que almacena de manera segura toda la información necesaria.</li> 
-                <li><strong>Styled Components:</strong> Utilizado para diseñar componentes de React, permitiéndonos mantener un estilo consistente y modular.</li> 
-            </ul> 
-            
-            <h3>Características Destacadas:</h3> 
-            <ul> 
-                <li><strong>Diseño Responsive 🦷:</strong> Compatible con todos los dispositivos, garantizando una experiencia de usuario óptima tanto en móviles como en escritorio.</li> 
-                <li><strong>Formularios de Contacto Eficientes 📧:</strong> Implementados con Brevo para facilitar y asegurar la comunicación con los pacientes.</li> 
-                <li><strong>Base de Datos Firebase 🔥:</strong> Utilizada para almacenar información crítica de manera segura y accesible.</li> 
-                <li><strong>Componentes Estilizados:</strong> Gracias a Styled Components, cada parte del sitio tiene un estilo coherente y atractivo.</li> 
-                <li><strong>Rendimiento Elevado 🚀:</strong> React y TypeScript permiten un rendimiento superior, asegurando que todas las páginas se carguen rápidamente y sin problemas.</li> 
-            </ul> 
-            
-            <p>Explora Hernz Dental Connection y descubre cómo estamos revolucionando los servicios dentales en línea: <a href="https://hernzdentalconnection.com">hernzdentalconnection.com</a></p>
-        `,
-    },
-    {
-        title: "Proyecto La Costillita",
-        image: {
-            src: lacostillita.src,
-            width: lacostillita.width,
-            height: lacostillita.height,
-            alt: "Proyecto La Costillita",
-        },
-        links: [
-            {
-                title: "Visitar",
-                link: "https://lacostillita.com.ar/",
-            }
-        ],
-        extraInfo: [
-            {
-                title: "Tecnologias y Herramientas",
-                description: "Wordpress, Elementor, Php",
-            },
-            {
-                title: "Fecha",
-                description: "2024-01-01",
-            },
-            {
-                title: "Cliente",
-                description: "La Costillita",
-            },
-        ],
-        content: `
-            <h2>¡Bienvenidos a La Costillita!</h2> 
-            <p>La Costillita es una auténtica parrilla argentina que ofrece una amplia selección de carnes de alta calidad y platos típicos de la región. Nos enorgullece 
-                presentarles nuestra página web, diseñada para reflejar la tradición y el sabor único de nuestra oferta gastronómica.</p> 
-                
-            <h3>Tecnologías Utilizadas</h3> 
-            <p>Para desarrollar el sitio web de La Costillita, empleamos varias tecnologías que nos permitieron crear una experiencia de usuario óptima:</p> 
-            
-            <ul>
-                <li><strong>WordPress:</strong> Utilizado como el CMS (Sistema de Gestión de Contenidos) principal.</li> 
-                <li><strong>Elementor:</strong> Utilizado para construir y diseñar visualmente las páginas.</li> 
-                <li><strong>PHP:</strong> Modificamos ciertas partes del código PHP para personalizar funcionalidades específicas.</li> 
-                <li><strong>Plugins:</strong> 
-                    <ul> 
-                        <li>Formularios: Implementamos plugins como Contact Form 7 para facilitar la comunicación con nuestros clientes.</li> 
-                        <li>SEO: Utilizamos plugins como Yoast SEO para optimizar la visibilidad del sitio en los motores de búsqueda.</li> 
-                    </ul> 
-                </li> 
-            </ul> 
-
-            <h3>Características Destacadas:</h3> 
-            <ul> 
-                <li><strong>Diseño Atractivo y Responsive:</strong> Asegurando una experiencia de usuario excepcional en todos los dispositivos.</li> 
-                <li><strong>Optimización SEO 📈:</strong> Mejoramos la visibilidad del sitio web en los motores de búsqueda para facilitar que más clientes nos encuentren.</li> 
-                <li><strong>Formularios de Contacto Funcionales 📧:</strong> Facilitan la reserva de mesas y la realización de consultas.</li> 
-                <li><strong>Personalización con PHP:</strong> Adaptamos el sitio a nuestras necesidades específicas mediante modificaciones en PHP.</li> 
-            </ul> 
-            
-            <p>Descubre el sabor auténtico de La Costillita y explora nuestra nueva página web: <a href="https://lacostillita.com.ar">lacostillita.com.ar</a></p>
-        `,
-    },
+    
 ];
