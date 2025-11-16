@@ -45,16 +45,10 @@ export const Image: FC<ImageProps> = ({
     loading,
     ...rest
 }) => {
-    /**
-     * If srcLocal or src is not provided throw an error
-     */
     if (!srcLocal && !src) {
         throw new Error("srcLocal or src is required");
     }
 
-    /**
-     * this component should be able to use local images or images from external sources
-     */
     const image = srcLocal ? images[srcLocal] : { src, width, height };
 
     return (
