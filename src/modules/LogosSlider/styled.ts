@@ -37,14 +37,19 @@ export const Logo = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
+        background: #fff;
+        border-radius: 12px;
+        margin: 10px auto;
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 1px 8px 0 rgba(255,255,255,0.12);
+        border: 1px solid #eaeaea;
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 40px;
+        height: 40px;
         object-fit: contain;
-
-        [data-theme="dark"] & {
-            filter: invert(1);
-        }
-    }
+            display: block;
+            margin: auto;
 `;

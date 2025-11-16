@@ -39,12 +39,7 @@ type IconName = {
     alt: string;
 };
 
-/**
- * Icon is a component that renders an image with the specified icon name
- * @example
- * <Icon iconData="home" alt="home" />
- * for change color of icon use css filter
- */
+
 export const Icon: FC<IconName> = ({ alt, iconData, ...rest }) => {
     const icon = icons[iconData];
 
@@ -61,33 +56,33 @@ export const Icon: FC<IconName> = ({ alt, iconData, ...rest }) => {
     );
 };
 
-import IconLogo1 from "./1.png";
-import IconLogo2 from "./2.png";
-import IconLogo3 from "./4.png";
-import IconLogo4 from "./5.png";
-import IconLogo5 from "./6.png";
-import IconLogo6 from "./7.png";
-import IconLogo7 from "./8.png";
-import IconLogo8 from "./9.png";
-import IconLogo9 from "./10.png";
-import IconLogo10 from "./12.png";
-import IconLogo11 from "./14.png";
-import IconLogo12 from "./15.png";
-import IconLogo13 from "./18.png";
-import IconLogo14 from "./19.png";
-import IconLogo15 from "./20.png";
-import IconLogo16 from "./22.png";
-import IconLogo17 from "./24.png";
-import IconLogo18 from "./25.png";
-import IconLogo19 from "./26.png";
-import IconLogo20 from "./27.png";
-import IconLogo21 from "./28.png";
-import IconLogo22 from "./29.png";
-import IconLogo23 from "./31.png";
-import IconLogo24 from "./32.png";
-import IconLogo25 from "./33.png";
-import IconLogo26 from "./34.png";
-import IconLogo27 from "./35.png";
+import IconLogo1 from "./1.svg";
+import IconLogo2 from "./2.svg";
+import IconLogo3 from "./4.svg";
+import IconLogo4 from "./5.svg";
+import IconLogo5 from "./6.svg";
+import IconLogo6 from "./7.svg";
+import IconLogo7 from "./8.svg";
+import IconLogo8 from "./9.svg";
+import IconLogo9 from "./10.svg";
+import IconLogo10 from "./12.svg";
+import IconLogo11 from "./14.svg";
+import IconLogo12 from "./15.svg";
+import IconLogo13 from "./18.svg";
+import IconLogo14 from "./19.svg";
+import IconLogo15 from "./20.svg";
+import IconLogo16 from "./22.svg";
+import IconLogo17 from "./24.svg";
+import IconLogo18 from "./25.svg";
+import IconLogo19 from "./26.svg";
+import IconLogo20 from "./27.svg";
+import IconLogo21 from "./28.svg";
+import IconLogo22 from "./29.svg";
+import IconLogo23 from "./31.svg";
+import IconLogo24 from "./32.svg";
+import IconLogo25 from "./33.svg";
+import IconLogo26 from "./34.svg";
+import IconLogo27 from "./35.svg";
 
 
 
