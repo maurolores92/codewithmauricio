@@ -3,7 +3,7 @@ import { type FC } from "react";
 import IconHome from "./icon-home.svg";
 import IconService from "./icon-service.svg";
 import IconContact from "./icon-contact.svg";
-import IconBlog from "./icon-blog.svg";
+// ...removed blog icon import...
 import IconWork from "./icon-work.svg";
 import IconPerson from "./icon-person.svg";
 import IconThemeDark from "./icon-theme-dark.svg";
@@ -20,7 +20,7 @@ export const icons = {
     home: IconHome,
     service: IconService,
     contact: IconContact,
-    blog: IconBlog,
+    // ...removed blog icon export...
     work: IconWork,
     person: IconPerson,
     themeDark: IconThemeDark,

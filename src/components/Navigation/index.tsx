@@ -35,12 +35,6 @@ export const Navigation: FC = () => {
                             Contacto
                         </a>
                     </li>
-                    <li>
-                        <a href="/blog">
-                            <Icon iconData="blog" alt="blog icon" />
-                            Blog
-                        </a>
-                    </li>
                     <S.NavigationSocials />
                 </S.NavigationList>
             </S.NavigationListWrapper>

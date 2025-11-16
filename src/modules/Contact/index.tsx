@@ -10,16 +10,9 @@ import { TextBox } from "@components/textBox";
 import axios from "axios";
 import { FadeIn } from "@utils/animations/FadeIn";
 
-/**
- * just for example contact form is setup with
- * @url https://emailjs.com
- */
 export const Contact: FC = () => {
     const [emailSent, setEmailSent] = useState(false);
 
-    /**
-     * Zod schema for form validation
-     */
     const schema = z.object({
         name: z.string().min(2, {
             message: "El nombre debe tener al menos 2 caracteres.",
@@ -32,9 +25,6 @@ export const Contact: FC = () => {
         }),
     });
 
-    /**
-     * React hook form setup
-     */
     const contactForm = useForm({
         resolver: zodResolver(schema),
         defaultValues: {
@@ -44,23 +34,12 @@ export const Contact: FC = () => {
         },
     });
 
-    /**
-     * Submit form function
-     * @param {Object} values - form values
-     * @returns {Promise<void>}
-     * just for example contact form is setup with
-     * @url https://emailjs.com
-     * you can use any other service or setup your own
-     *
-     * when you setup your own service
-     * remember to store somewhere else data like api keys  to be more secure
-     */
     const formSubmit = contactForm.handleSubmit(async (values) => {
         axios
             .post("https://api.emailjs.com/api/v1.0/email/send", {
-                service_id: "service_pjkjt84",
-                template_id: "template_lq79wcs",
-                user_id: "KFILfWDYSkUZMtPXZ",
+                service_id: "service_wellod8",
+                template_id: "template_dizuau5",
+                user_id: "sy06gLXSaERt67846",
                 template_params: {
                     name: values.name,
                     email: values.email,
