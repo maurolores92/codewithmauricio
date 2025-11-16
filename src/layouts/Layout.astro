@@ -26,7 +26,7 @@ const { title, description } = Astro.props;
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <meta name="generator" content={Astro.generator} />
-        <meta name="description" content={description} />
+        <meta name="description" content="Portfolio de Mauricio Lores, desarrollador web full stack especializado en React, Next.js, Node.js, TypeScript y MySQL. Soluciones web modernas, escalables y personalizadas para empresas y emprendedores." />
         <meta
             name="robots"
             content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -42,8 +42,7 @@ const { title, description } = Astro.props;
         <meta property="og:title" content="MauroDev" />
         <meta property="og:image" content="http://imgfz.com/i/f17VCYT.png" />
         <meta property="og:description" content={description} />
-        <meta property="og:site_name" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores" />
-        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Desarrollador Full Stack | MauroDev" />
         <meta property="og:locale" content="es_ES" />
         <meta name="card" content="summary_large_image" />
         <meta name="title" content="MauroDev" />
@@ -52,8 +51,22 @@ const { title, description } = Astro.props;
         <meta property="domain" content="codewithmauricio.tech" />
         <meta property="url" content="https://codewithmauricio.tech" />
         <link rel="canonical" href="https://www.codewithmauricio.tech/" />
-        <title>{title}</title>
-        <Global styles={NormalizeCSS} />
+        <title>{title} | Desarrollador Web Full Stack | Portfolio de Mauricio Lores</title>
+                <Global styles={NormalizeCSS} />
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "Mauricio Lores",
+                    "jobTitle": "Desarrollador Web Full Stack",
+                    "url": "https://codewithmauricio.tech",
+                    "image": "http://imgfz.com/i/f17VCYT.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/maurolores92/",
+                        "https://github.com/maurolores92"
+                    ]
+                })}
+                </script>
         <fragment set:html={`<script async src="https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsID}"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
