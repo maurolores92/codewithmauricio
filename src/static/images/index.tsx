@@ -5,12 +5,11 @@ import MauroDev from "./maurodev.webp";
 import lacostillita from "./lacostillita.webp";
 import TECHapp from "./TECHapp.webp";
 import thewinenation from "./thewinenation.webp";
-import Hernzdentalconnection from "./Hernzdentalconnection.png";
 import Lumiflowca from "./Lumiflowca.png";
 import Sagcomstore from "./Sagcomstore.png";
-import Javimotor from "./Javimotor.png";
 import BlueWaveEnergy from "./BlueWaveEnergy.png";
 import CrealabStudio from "./CrealabStudio.png";
+import ViaViajes from "./Viaviajes.png";
 
 export const images = {
     logo: LogoImage,
@@ -19,12 +18,11 @@ export const images = {
     lacostillita: lacostillita,
     TECHapp: TECHapp,
     thewinenation: thewinenation,
-    hernzdentalconnection: Hernzdentalconnection,
     lumiflowca: Lumiflowca,
     sagcomstore: Sagcomstore,
-    javimotor: Javimotor,
     BlueWaveEnergy: BlueWaveEnergy,
     CrealabStudio: CrealabStudio,
+    viaviajes: ViaViajes,
 };
 
 type ImageProps = {
@@ -64,4 +62,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, TECHapp, lacostillita, thewinenation, Hernzdentalconnection, Lumiflowca, Sagcomstore, Javimotor, BlueWaveEnergy, CrealabStudio };
+export { Preview, TECHapp, lacostillita, thewinenation, Lumiflowca, Sagcomstore, BlueWaveEnergy, CrealabStudio, ViaViajes };
